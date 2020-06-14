@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="00b91ada-a0e1-4fa7-9ad2-838496bab35a" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1dDHScylLV33LRJsDEGXP6B8Im5" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Sum and Rest the Number with its Reversed" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="prime checker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../python docs" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../python docs/Sum and Rest the Number with its Reversed.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="prime checker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Sum and Rest the Number with its Reversed" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="00b91ada-a0e1-4fa7-9ad2-838496bab35a" name="Default Changelist" comment="" />
+      <created>1591952744206</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591952744206</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="419" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591998180419">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state x="419" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.24.1920.1056@0.24.1920.1056" timestamp="1591998180419" />
+    <state x="745" y="310" key="FileChooserDialogImpl" timestamp="1592041691018">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state x="745" y="310" key="FileChooserDialogImpl/0.24.1920.1056@0.24.1920.1056" timestamp="1592041691018" />
+    <state x="781" y="474" key="Github.CreateGistDialog" timestamp="1591998655229">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state x="781" y="474" key="Github.CreateGistDialog/0.24.1920.1056@0.24.1920.1056" timestamp="1591998655229" />
+    <state width="1897" height="289" key="GridCell.Tab.0.bottom" timestamp="1592041698011">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1897" height="289" key="GridCell.Tab.0.bottom/0.24.1920.1056@0.24.1920.1056" timestamp="1592041698011" />
+    <state width="1897" height="289" key="GridCell.Tab.0.center" timestamp="1592041698011">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1897" height="289" key="GridCell.Tab.0.center/0.24.1920.1056@0.24.1920.1056" timestamp="1592041698011" />
+    <state width="1897" height="289" key="GridCell.Tab.0.left" timestamp="1592041698011">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1897" height="289" key="GridCell.Tab.0.left/0.24.1920.1056@0.24.1920.1056" timestamp="1592041698011" />
+    <state width="1897" height="289" key="GridCell.Tab.0.right" timestamp="1592041698011">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1897" height="289" key="GridCell.Tab.0.right/0.24.1920.1056@0.24.1920.1056" timestamp="1592041698011" />
+    <state width="1897" height="357" key="GridCell.Tab.1.bottom" timestamp="1592041698005">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1897" height="357" key="GridCell.Tab.1.bottom/0.24.1920.1056@0.24.1920.1056" timestamp="1592041698005" />
+    <state width="1897" height="357" key="GridCell.Tab.1.center" timestamp="1592041698004">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1897" height="357" key="GridCell.Tab.1.center/0.24.1920.1056@0.24.1920.1056" timestamp="1592041698004" />
+    <state width="1897" height="357" key="GridCell.Tab.1.left" timestamp="1592041698003">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1897" height="357" key="GridCell.Tab.1.left/0.24.1920.1056@0.24.1920.1056" timestamp="1592041698003" />
+    <state width="1897" height="357" key="GridCell.Tab.1.right" timestamp="1592041698004">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state width="1897" height="357" key="GridCell.Tab.1.right/0.24.1920.1056@0.24.1920.1056" timestamp="1592041698004" />
+    <state x="465" y="187" key="SettingsEditor" timestamp="1592039313196">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state x="465" y="187" key="SettingsEditor/0.24.1920.1056@0.24.1920.1056" timestamp="1592039313196" />
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1591997565676">
+      <screen x="0" y="24" width="1920" height="1056" />
+    </state>
+    <state x="623" y="255" width="672" height="678" key="search.everywhere.popup/0.24.1920.1056@0.24.1920.1056" timestamp="1591997565676" />
+  </component>
+</project>
