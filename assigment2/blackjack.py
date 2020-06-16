@@ -32,11 +32,10 @@ def draw_card(deck):
 
 def player():
     score = 0
-    playing = True
-    while playing:
+    while True:
         card = draw_card(deck)
         score += value(card)
-        print(f" Your score is now {score}.")
+        print(f" Your hand is now {score}.")
         if score > 21:
             print(f"You lost! Your hand is {score}.")
             break
@@ -48,8 +47,35 @@ def player():
             if draw_another.lower() == "y":
                 continue
             else:
-                print(f"Your final score is {score}.")
+                print(f"Your final hand is {score}.")
                 break
     return score
 
-player()
+counter = 0
+def bank():
+    score = 0
+    player_score = player()
+    while True:
+        global  counter
+        counter +=1
+        card = draw_card(deck)
+        score += value(card)
+        # print(f"drawing... {counter}")
+        if player_score > 21:
+            print(f"Bank hand is {score}.\n")
+            print("You lost!")
+            break
+        elif score > 21:
+            print(f"Bank hand is {score}.\n")
+            print("You won!")
+            break
+        elif score < player_score:
+            continue
+        elif player_score < score < 21:
+            print(f"Bank hand is {score}.\n")
+            print("You lost!")
+            break
+    return score
+
+
+bank()
