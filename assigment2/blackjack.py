@@ -54,7 +54,12 @@ def player(player):
             print("Blackjack!")
             break
         else:
-            draw_another = input("Would you like to draw another? Y/N \n")
+            while True:
+                draw_another = input("Would you like to draw another card? Y/N \n")
+                if draw_another.lower() in ["y", "n", "yes", "no"] and len(draw_another) < 4:
+                    break
+                else:
+                     print("Please enter yes/y or no/n !")
             if draw_another.lower() == "y":
                 continue
             else:
