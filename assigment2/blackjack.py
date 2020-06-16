@@ -32,6 +32,7 @@ def draw_card(deck):
     return card
 
 def player():
+    global result
     cards = []
     card = draw_card(deck)
     cards.append(value(card))
@@ -45,7 +46,8 @@ def player():
         for c in cards:
             print(name(c-1))
         if score > 21:
-            print(f"You lost! Your hand is {score}/{alt_score}."if alt_score else f"You lost! Your hand is {score}.")
+            print(f"You busted! Your hand is {score}.")
+            result.append(f"{name_players[n-1]} vs Bank! \n You lost!\n")
             break
         elif score == 21:
             print("Blackjack!")
@@ -55,51 +57,69 @@ def player():
             if draw_another.lower() == "y":
                 continue
             else:
-                print(f"Your final hand is {score}/{alt_score}." if alt_score else f"Your final hand is {score}.")
+                print(f"Your final hand is {score}.")
                 break
     return score
 
+
+
 def bank(scores):
-    score = 0
-    card = draw_card(deck)
-    score += value(card)
-    print(f"Bank has a {name(card)} ({value(card)}).")
-    player_score = player()
-    while True:
+    global score
+    global card
+    global name_players
+    global result
+    running = True
+
+    while running:
         card = draw_card(deck)
         score += value(card)
-        print(f"Bank hand is {score}.\n")
+        # print(f"Bank hand is {score}.")
         if score > 21:
-            # print(f"Bank hand is {score}.\n")
-            print("You won!")
-            break
+            print("Bank busted!")
+            for player_score in scores:
+                if player_score < 22:
+                    result.append(f"{name_players[scores.index(player_score)]} vs Bank!\n You won!\n")
+            running = False
+
         elif score < 17:
             continue
-        elif 16 < score < 22:
-            if score > player_score:
-                # print(f"Bank hand is {score}.\n")
-                print("You lost!")
-                break
-            elif score == player_score:
-                print("It's a draw!")
-            elif  score < player_score < 22:
-                # print(f"Bank hand is {score}.\n")
-                print("You won!")
-                break
-            else:
-                break
+        if 16 < score < 22:
+            for player_score in scores:
+                if score > player_score:
+                    result.append(f"{name_players[scores.index(player_score)]} vs Bank!\n You lost!\n")
+                    continue
+                elif score == player_score:
+                    result.append(f"{name_players[scores.index(player_score)]} vs Bank!\nIt's a draw!\n")
+                    continue
+                elif  score < player_score < 22:
+                    result.append(f"{name_players[scores.index(player_score)]} vs Bank!\n You won!\n")
+                    continue
+            running = False
+    print(f"\nBank's hand is {score}.\n")
+    for i in result:
+        print(i)
 
+
+
+result = []
+
+card = draw_card(deck)
+score = value(card)
+first_bank_c = (f"Bank has a {name(card)} ({value(card)}).")
+
+nr_players = input("How many players?")
+name_players = []
+for n in range(int(nr_players)):
+    name_players.append(input(f"Player {n+1} name: "))
 
 def play():
-    nr_players = input("How many players?")
-    name_players = []
+    global first_bank_c
     player_chips = np.full(int(nr_players), 100)
-    player_score = []
-    for n in range(int(nr_players)):
-        name_players.append(input(f"Player {n+1} name: "))
+    players_scores = []
+    print(first_bank_c)
     for n in range(int(nr_players)):
         print(f"\n{name_players[n]}'s turn! \n")
-        player_score.append(player())
-    bank()
+        players_scores.append(player())
+    bank(players_scores)
 
-print(play())
+play()
