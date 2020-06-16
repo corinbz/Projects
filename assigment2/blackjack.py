@@ -1,14 +1,13 @@
 import random
 
-
-deck = [range(0,52)]
+deck = [n for n in range(0, 52)]
 random.shuffle(deck)
 
 def name(card_idx):
     # Card indices are numbered 0 - 51. Every fourteenth card is a new suit
     suits = ["diamonds", "hearts", "clubs", "spades"]
     cards = ["ace", "2", "3", "4", "5", "6", "7", "8", "9", "10",
-    "jack", "queen", "king"]
+             "jack", "queen", "king"]
     isuit = card_idx // 13
     icard = card_idx % 13
     txt = cards[icard] + " of " + suits[isuit]
@@ -25,9 +24,30 @@ def total(hand):
     # Iterate over the cards in hand, and calculate the total value.
     return tot # Additional question: What happens if you use the variable name ↪"value" instead of "tot" here?
 
-hand = [0, 3, 5]
 
-# for c in hand:
-#     print(name(c))
-#
-# print(total(hand))
+def draw_card(deck):
+    card = random.choice(deck)
+    deck.remove(card)
+    return card
+
+def player():
+    score = 0
+    playing = True
+    while playing:
+        card = draw_card(deck)
+        score += value(card)
+        print(f" Your score is now {score}.")
+        if score > 21:
+            print(f"You lost! Your hand is {score}.")
+            break
+        elif score == 21:
+            print("Blackjack!")
+        else:
+            draw_another = input("Would you like to draw another? Y/N \n")
+            if draw_another.lower() == "y":
+                continue
+            else:
+                break
+    return score
+
+player()
