@@ -51,16 +51,13 @@ def player():
                 break
     return score
 
-counter = 0
+# counter = 0
 def bank():
     score = 0
     player_score = player()
     while True:
-        global  counter
-        counter +=1
         card = draw_card(deck)
         score += value(card)
-        # print(f"drawing... {counter}")
         if player_score > 21:
             print(f"Bank hand is {score}.\n")
             print("You lost!")
@@ -75,7 +72,15 @@ def bank():
             print(f"Bank hand is {score}.\n")
             print("You lost!")
             break
-    return score
 
+def play():
+    nr_players = input("How many players?")
+    name_players = []
+    player_chips = [100] * int(nr_players)
+    for n in range(int(nr_players)):
+        name_players.append(input(f"Player {n+1} name: "))
+    for n in range(int(nr_players)):
+        print(f"\n{name_players[n]}'s turn! \n")
+        bank()
 
-bank()
+play()
