@@ -42,11 +42,13 @@ def player():
             break
         elif score == 21:
             print("Blackjack!")
+            break
         else:
             draw_another = input("Would you like to draw another? Y/N \n")
             if draw_another.lower() == "y":
                 continue
             else:
+                print(f"Your final score is {score}.")
                 break
     return score
 
