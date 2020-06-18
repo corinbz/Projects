@@ -147,14 +147,14 @@ def play():
 
 result = []  # Stores strings about result between player and bank
 
-########### Draws a card for the bank and stores it to be printed later #######
+# ########## Draws a card for the bank and stores it to be printed later #######
 card = draw_card(deck)
 bank_cards = []
 bank_cards.append(0)
 score = total(bank_cards)  # The bank's total score
 first_bank_c = (f"Bank has a {name(card)} ({value(card)}).")
 
-########## Get the info about players ###########
+# ######### Get the info about players ###########
 while True:
     nr_players = input("How many players?\n")
     if nr_players.isdigit() == True and 0 < int(nr_players) <= 7:
