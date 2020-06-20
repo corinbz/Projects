@@ -1,7 +1,7 @@
 import random
+import numpy as np
 
 
-# import numpy as np
 
 
 class Deck:
@@ -84,6 +84,7 @@ class Game:
         self.name_players = ['corin']
         self.deck = Deck()
         self.deck.shuffle()
+        self.chips = np.full(self.nr_players, 100)
         # Deal each player 2 cards
         self.dealer_hand = Hand(self.deck.draw(2))
         self.players_hands = [Hand(self.deck.draw(2)) for _ in range(self.nr_players)]
@@ -108,7 +109,6 @@ class Game:
 
     def players_loop(self, player):
         while True:
-            self.players_hands[player].get_score()
             if self.players_hands[player].hand_value > 21:
                 print(f"Your final hand is {self.players_hands[player].hand_value}.")
                 break
@@ -117,29 +117,51 @@ class Game:
                 continue
             else:
                 print(f"Your final hand is {self.players_hands[player].hand_value}.")
+                break
 
     def dealers_loop(self):
         while True:
-            print(f"{self.dealer_hand.get_score()}")
+            # print(f"{self.dealer_hand.get_score()}")
             if self.dealer_hand.hand_value > 21:
-                print(f"Dealer busted with {self.dealer_hand.hand_value}!")
+                # print(f"Dealer busted with {self.dealer_hand.hand_value}!")
                 break
             elif self.dealer_hand.hand_value == 17 and not self.dealer_hand.has_ace():
-                print(f"Dealer's total hand is {self.dealer_hand.hand_value}")
+                # print(f"Dealer's total hand is {self.dealer_hand.hand_value}")
                 break
             elif 17 < self.dealer_hand.hand_value < 22 or 17 < self.dealer_hand.hand_value_eleven < 22:
-                print(f"Dealer's total hand is"
-                      f" {max([self.dealer_hand.hand_value, self.dealer_hand.hand_value_eleven])}")
+                # print(f"Dealer's total hand is"
+                #       f" {max([self.dealer_hand.hand_value, self.dealer_hand.hand_value_eleven])}")
                 break
             else:
                 self.dealer_hand += int(self.deck.draw()[0])
                 continue
 
+    #TODO split the hand function
+    # def split_the_hand(self, player):
+    #     self.players_hands[player].get_score()
+    #     if Card(self.players_hands[player].hand[0]).card_value == Card(self.players_hands[player].hand[1]).card_value:
+    #         if input("Would you like to split the hand? Y/N").lower() == "y":
+    #             self.players_hands[player].hand[player:player] = self.players_hands[player].hand[player][0]
+    #             self.players_hands[player].hand[player+1:player+1] = self.players_hands[player].hand[player][1]
+    #             # self.players_hands[player][0] = self.players_hands[player].hand[0]
+    #             # self.players_hands[player][1] = self.players_hands[player].hand[1]
+
+    def get_results(self, player):
+        if self.players_hands[player].hand_value > 21:
+            print(f"Sorry {self.name_players[player]}, you lost!")
+        elif self.dealer_hand.hand_value < self.players_hands[player].hand_value < 22:
+            print(f"Congratulations {self.name_players[player]}! You won!")
+        elif self.dealer_hand.hand_value == self.players_hands[player].hand_value:
+            print("It's a draw!")
+        else:
+            print(f"Sorry {self.name_players[player]}, you lost!")
+
     def play(self):
+        self.dealers_loop()
         for player in range(self.nr_players):
             print(f"{self.name_players[player]}'s turn!")
             self.players_loop(player)
-        self.dealers_loop()
+            self.get_results(player)
 
 
 # Needed variables : Deck, player scores, nr_players, name_players

@@ -53,7 +53,6 @@ def player(player):
         for c in cards:
             print(name(c - 1))
 
-        # TODO Split the hand
         # Ask if you want to split
         # if cards[0] == cards[1]:
         #     while True:
