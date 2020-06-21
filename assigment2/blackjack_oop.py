@@ -1,5 +1,4 @@
 import random
-import numpy as np
 
 
 class Deck:
@@ -57,9 +56,9 @@ class Hand:
     def get_score(self):
         if self.hand_value_alt != 0:
             print(
-                f"Your hand is now {self.hand_value}/{self.hand_value_alt}: \n{self.display()}")
+                f"Your hand value is now {self.hand_value}/{self.hand_value_alt}: \n{self.display()}")
         else:
-            print(f"Your hand is now {self.hand_value}: \n{self.display()}")
+            print(f"Your hand value is now {self.hand_value}: \n{self.display()}")
 
     def has_ace(self):
         if 1 in [int(Card(c).card_value) for c in self.hand]:
@@ -75,13 +74,23 @@ class Hand:
 class Game:
 
     def __init__(self):
+
+        # Get the number of players / name of players
+        while True:
+            self.nr_players = input("How many players?\n")
+            if self.nr_players.isdigit() == True and 0 < int(self.nr_players) <= 7:
+                self.nr_players = int(self.nr_players)
+                break
+            else:
+                print("Please enter a number between 1 and 7!\n")
+
+        self.name_players = []
+        for n in range(self.nr_players):
+            self.name_players.append(input(f"Player {n + 1} name: "))
         self.bet = int()
-        self.nr_players = 2
-        self.name_players = ['corin', "ana"]
         self.dealer_hand = []
         self.chips = [100] * self.nr_players
         self.player_hand = Hand
-        # Deal each player 2 cards
 
     @staticmethod
     def ask_to_draw():
@@ -102,7 +111,7 @@ class Game:
         self.make_bet(player)
         while True:
             if self.player_hand.hand_value > 21:
-                print(f"Your final hand is {self.player_hand.hand_value}.")
+                print(f"Your final hand value is {self.player_hand.hand_value}.")
                 break
             if Game.ask_to_draw():
                 self.player_hand += int(self.deck.draw()[0])
@@ -110,9 +119,9 @@ class Game:
                 continue
             else:
                 if self.player_hand.hand_value_alt < self.player_hand.hand_value:
-                    print(f"Your final hand is {self.player_hand.hand_value}.")
+                    print(f"Your final hand value is {self.player_hand.hand_value}.")
                 else:
-                    print(f"Your final hand is {self.player_hand.hand_value_alt}.")
+                    print(f"Your final hand value is {self.player_hand.hand_value_alt}.")
                 break
 
     def dealers_loop(self):
@@ -183,28 +192,13 @@ class Game:
             self.deck.shuffle()
             for player in range(self.nr_players):
                 self.dealers_loop()
-                print(f"{self.name_players[player]}'s turn!")
+                print(f"\n{self.name_players[player]}'s turn!")
                 self.players_loop(player)
                 self.get_results(player)
                 print(f"You have now {self.chips[player]} chips.\n")
             if input("Would you like to play again? Y/N\n").lower() in ["y", "yes"]:
                 continue
             break
-
-
-# Needed variables : Deck, player scores, nr_players, name_players
-# Ask for user input
-# TODO easier to debug
-# while True:
-#     nr_players = input("How many players?\n")
-#     if nr_players.isdigit() == True and 0 < int(nr_players) <= 7:
-#         break
-#     else:
-#         print("Please enter a number between 1 and 7!\n")
-#
-# name_players = []
-# for n in range(int(nr_players)):
-#     name_players.append(input(f"Player {n + 1} name: "))
 
 
 game = Game()
