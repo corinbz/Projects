@@ -2,8 +2,6 @@ import random
 import numpy as np
 
 
-
-
 class Deck:
     """Contains the deck of cards"""
 
@@ -36,13 +34,10 @@ class Card(Deck):
 
 
 class Hand:
+
     def __init__(self, hand):
         self.hand = hand
         self.hand_value = sum([Card(c).card_value for c in hand])
-        if 1 in [Card(c).card_value for c in hand]:
-            self.hand_value_eleven = sum([Card(c).card_value for c in hand]) + 10
-        else:
-            self.hand_value_eleven = 0
 
         # Check if A is in the hand, and add it to total hand alternative
         if 1 in [Card(c).card_value for c in hand] and sum([Card(c).card_value for c in hand]) + 10 < 22:
@@ -80,17 +75,13 @@ class Hand:
 class Game:
 
     def __init__(self):
-        self.nr_players = 1
-        self.name_players = ['corin']
-        self.deck = Deck()
-        self.deck.shuffle()
-        self.chips = np.full(self.nr_players, 100)
+        self.bet = int()
+        self.nr_players = 2
+        self.name_players = ['corin', "ana"]
+        self.dealer_hand = []
+        self.chips = [100] * self.nr_players
+        self.player_hand = Hand
         # Deal each player 2 cards
-        self.dealer_hand = Hand(self.deck.draw(2))
-        self.players_hands = [Hand(self.deck.draw(2)) for _ in range(self.nr_players)]
-        # self.players_hands =[Hand(self.deck.draw(2)) for _ in range(self.nr_players)]
-        # Show one card from the dealer
-        print(f"Dealer has a {self.dealer_hand.display_one()}.")
 
     @staticmethod
     def ask_to_draw():
@@ -101,34 +92,40 @@ class Game:
                 break
             print("Please enter yes/y or no/n !")
         if draw_another.lower() == "y" or draw_another.lower() == "yes":
-            # self.players_hands[player] += int(self.deck.draw()[0])
             return 1
         else:
-            # print(f"Your final hand is {self.players_hands[player].hand_value}.")
             return 0
 
     def players_loop(self, player):
+        self.player_hand = Hand(self.deck.draw(2))
+        self.player_hand.get_score()
+        self.make_bet(player)
         while True:
-            if self.players_hands[player].hand_value > 21:
-                print(f"Your final hand is {self.players_hands[player].hand_value}.")
+            if self.player_hand.hand_value > 21:
+                print(f"Your final hand is {self.player_hand.hand_value}.")
                 break
             if Game.ask_to_draw():
-                self.players_hands[player] += int(self.deck.draw()[0])
+                self.player_hand += int(self.deck.draw()[0])
+                self.player_hand.get_score()
                 continue
             else:
-                print(f"Your final hand is {self.players_hands[player].hand_value}.")
+                if self.player_hand.hand_value_alt < self.player_hand.hand_value:
+                    print(f"Your final hand is {self.player_hand.hand_value}.")
+                else:
+                    print(f"Your final hand is {self.player_hand.hand_value_alt}.")
                 break
 
     def dealers_loop(self):
+        self.dealer_hand = Hand(self.deck.draw(2))
+        print(f"Dealer has a(n) {self.dealer_hand.display_one()}.")
         while True:
-            # print(f"{self.dealer_hand.get_score()}")
             if self.dealer_hand.hand_value > 21:
                 # print(f"Dealer busted with {self.dealer_hand.hand_value}!")
                 break
             elif self.dealer_hand.hand_value == 17 and not self.dealer_hand.has_ace():
                 # print(f"Dealer's total hand is {self.dealer_hand.hand_value}")
                 break
-            elif 17 < self.dealer_hand.hand_value < 22 or 17 < self.dealer_hand.hand_value_eleven < 22:
+            elif 17 < self.dealer_hand.hand_value < 22 or 17 < self.dealer_hand.hand_value_alt < 22:
                 # print(f"Dealer's total hand is"
                 #       f" {max([self.dealer_hand.hand_value, self.dealer_hand.hand_value_eleven])}")
                 break
@@ -136,7 +133,7 @@ class Game:
                 self.dealer_hand += int(self.deck.draw()[0])
                 continue
 
-    #TODO split the hand function
+    # TODO split the hand function
     # def split_the_hand(self, player):
     #     self.players_hands[player].get_score()
     #     if Card(self.players_hands[player].hand[0]).card_value == Card(self.players_hands[player].hand[1]).card_value:
@@ -147,21 +144,52 @@ class Game:
     #             # self.players_hands[player][1] = self.players_hands[player].hand[1]
 
     def get_results(self, player):
-        if self.players_hands[player].hand_value > 21:
+        if self.player_hand.hand_value > 21:
             print(f"Sorry {self.name_players[player]}, you lost!")
-        elif self.dealer_hand.hand_value < self.players_hands[player].hand_value < 22:
+            self.chips[player] -= self.bet
+        elif self.dealer_hand.hand_value > 21:
             print(f"Congratulations {self.name_players[player]}! You won!")
-        elif self.dealer_hand.hand_value == self.players_hands[player].hand_value:
+            self.chips[player] += self.bet
+        elif self.dealer_hand.hand_value < self.player_hand.hand_value < 22:
+            print(f"Congratulations {self.name_players[player]}! You won!")
+            self.chips[player] += self.bet
+        elif self.dealer_hand.hand_value < self.player_hand.hand_value_alt < 22:
+            print(f"Congratulations {self.name_players[player]}! You won!")
+            self.chips[player] += self.bet
+        elif self.dealer_hand.hand_value == self.player_hand.hand_value:
+            print("It's a draw!")
+        elif self.dealer_hand.hand_value_alt == self.player_hand.hand_value:
             print("It's a draw!")
         else:
             print(f"Sorry {self.name_players[player]}, you lost!")
+            self.chips[player] -= self.bet
+
+    def make_bet(self, player):
+        while True:
+            self.bet = input(f"You have {self.chips[player]} chips.\nPlease insert how much you would like to bet:\n")
+            if self.bet.isnumeric():
+                if self.chips[player] < int(self.bet) or int(self.bet) < 0:
+                    print(f"Number is out of range! Enter a number between 1 and {self.chips[player]} !")
+                    continue
+            elif not self.bet.isnumeric():
+                print("Please insert a valid numeric value!")
+                continue
+            break
+        self.bet = int(self.bet)
 
     def play(self):
-        self.dealers_loop()
-        for player in range(self.nr_players):
-            print(f"{self.name_players[player]}'s turn!")
-            self.players_loop(player)
-            self.get_results(player)
+        while True:
+            self.deck = Deck()
+            self.deck.shuffle()
+            for player in range(self.nr_players):
+                self.dealers_loop()
+                print(f"{self.name_players[player]}'s turn!")
+                self.players_loop(player)
+                self.get_results(player)
+                print(f"You have now {self.chips[player]} chips.\n")
+            if input("Would you like to play again? Y/N\n").lower() in ["y", "yes"]:
+                continue
+            break
 
 
 # Needed variables : Deck, player scores, nr_players, name_players
