@@ -5,15 +5,18 @@ class Deck:
     """Contains the deck of cards"""
 
     def __init__(self):
+        """ Defines the ranks, suits and deck."""
         self.ranks = ["ace", "2", "3", "4", "5", "6", "7", "8", "9", "10",
                       "jack", "queen", "king"]
         self.suits = ["diamonds", "hearts", "clubs", "spades"]
         self.deck = list(range(52))
 
     def shuffle(self):
+        """ Shuffles the deck."""
         random.shuffle(self.deck)
 
     def draw(self, cards=1):
+        """ Returns a card(if no value is passed) and deletes it from the deck."""
         cards_drawed = []
         for _ in range(cards):
             cards_drawed.append(self.deck.pop())
@@ -21,6 +24,7 @@ class Deck:
 
 
 class Card(Deck):
+    """Card class child of Deck. It has it's own rank, suit, index, value"""
     def __init__(self, index):
         super().__init__()
         self.rank = self.ranks[index % 13]
@@ -106,9 +110,9 @@ class Game:
             return 0
 
     def players_loop(self, player):
+        self.make_bet(player)
         self.player_hand = Hand(self.deck.draw(2))
         self.player_hand.get_score()
-        self.make_bet(player)
         while True:
             if self.player_hand.hand_value > 21:
                 print(f"Your final hand value is {self.player_hand.hand_value}.")

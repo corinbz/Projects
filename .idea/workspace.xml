@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38b8832f-d9ee-4942-8f33-b27e06c64987" name="Default Changelist" comment="working version with chips / more refractoring">
+    <list default="true" id="38b8832f-d9ee-4942-8f33-b27e06c64987" name="Default Changelist" comment="more refractoring">
+      <change afterPath="$PROJECT_DIR$/ball_simulation/ball_sim.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/small_scripts/reduce_directions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assigment2/blackjack_oop.py" beforeDir="false" afterPath="$PROJECT_DIR$/assigment2/blackjack_oop.py" afterDir="false" />
     </list>
@@ -42,9 +44,9 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assigment2/TODO.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/small_scripts" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -59,7 +61,7 @@
       <recent name="$PROJECT_DIR$/assigment2" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.blackjack_oop">
+  <component name="RunManager" selected="Python.reduce_directions">
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="python projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,19 +83,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="blackjack" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ball_example" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/coins_and_bank" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ball_simulation" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python docs/numpy_practice.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ball_simulation/ball_example.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -102,19 +104,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="blackjack1" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="ball_sim" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
+      <option name="SDK_HOME" value="/usr/bin/python3.8" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/ball_simulation" />
+      <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/assigment2/blackjack.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ball_simulation/ball_sim.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -144,19 +146,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="find_the_odd" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="encrypt_this" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/coins_and_bank" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/small_scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python docs/find_the_odd.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/small_scripts/encrypt_this.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -186,19 +188,19 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="the_vowel_code" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="reduce_directions" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python projects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="/usr/bin/python3.8" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/coins_and_bank" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/small_scripts" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/python docs/the_vowel_code.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/small_scripts/reduce_directions.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -209,19 +211,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.minecraft_1" />
-      <item itemvalue="Python.blackjack1" />
-      <item itemvalue="Python.blackjack" />
       <item itemvalue="Python.blackjack_oop" />
-      <item itemvalue="Python.find_the_odd" />
-      <item itemvalue="Python.the_vowel_code" />
+      <item itemvalue="Python.ball_sim" />
+      <item itemvalue="Python.ball_example" />
+      <item itemvalue="Python.encrypt_this" />
+      <item itemvalue="Python.reduce_directions" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.reduce_directions" />
+        <item itemvalue="Python.encrypt_this" />
+        <item itemvalue="Python.ball_sim" />
+        <item itemvalue="Python.ball_example" />
         <item itemvalue="Python.blackjack_oop" />
-        <item itemvalue="Python.blackjack1" />
-        <item itemvalue="Python.blackjack" />
-        <item itemvalue="Python.find_the_odd" />
-        <item itemvalue="Python.the_vowel_code" />
       </list>
     </recent_temporary>
   </component>
@@ -334,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1592746583171</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="more refractoring">
+      <created>1592748148415</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1592748148415</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -375,7 +384,8 @@
     <MESSAGE value="refractored a lot&#10;player loop complete&#10;dealer loop complete" />
     <MESSAGE value="before implementing the chips" />
     <MESSAGE value="working version with chips / more refractoring" />
-    <option name="LAST_COMMIT_MESSAGE" value="working version with chips / more refractoring" />
+    <MESSAGE value="more refractoring" />
+    <option name="LAST_COMMIT_MESSAGE" value="more refractoring" />
   </component>
   <component name="WindowStateProjectService">
     <state x="657" y="309" key="#Servers" timestamp="1592661972817">
@@ -386,10 +396,10 @@
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
     <state x="1147" y="147" key="#blackjack/0.24.1920.1056@0.24.1920.1056" timestamp="1592172278663" />
-    <state x="419" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592509933988">
+    <state x="419" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593249451974">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state x="419" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.24.1920.1056@0.24.1920.1056" timestamp="1592509933988" />
+    <state x="419" y="210" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.24.1920.1056@0.24.1920.1056" timestamp="1593249451974" />
     <state x="650" y="359" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592661864223">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
@@ -410,46 +420,46 @@
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
     <state x="688" y="250" key="EnvironmentVariablesDialog/0.24.1920.1056@0.24.1920.1056" timestamp="1592509931379" />
-    <state x="743" y="310" key="FileChooserDialogImpl" timestamp="1592667713032">
+    <state x="743" y="310" key="FileChooserDialogImpl" timestamp="1593249450211">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state x="743" y="310" key="FileChooserDialogImpl/0.24.1920.1056@0.24.1920.1056" timestamp="1592667713032" />
-    <state width="949" height="191" key="GridCell.Tab.0.bottom" timestamp="1592747020426">
+    <state x="743" y="310" key="FileChooserDialogImpl/0.24.1920.1056@0.24.1920.1056" timestamp="1593249450211" />
+    <state width="1899" height="206" key="GridCell.Tab.0.bottom" timestamp="1593251336716">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state width="949" height="191" key="GridCell.Tab.0.bottom/0.24.1920.1056@0.24.1920.1056" timestamp="1592747020426" />
-    <state width="949" height="191" key="GridCell.Tab.0.center" timestamp="1592747020426">
+    <state width="1899" height="206" key="GridCell.Tab.0.bottom/0.24.1920.1056@0.24.1920.1056" timestamp="1593251336716" />
+    <state width="1899" height="206" key="GridCell.Tab.0.center" timestamp="1593251336716">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state width="949" height="191" key="GridCell.Tab.0.center/0.24.1920.1056@0.24.1920.1056" timestamp="1592747020426" />
-    <state width="949" height="191" key="GridCell.Tab.0.left" timestamp="1592747020425">
+    <state width="1899" height="206" key="GridCell.Tab.0.center/0.24.1920.1056@0.24.1920.1056" timestamp="1593251336716" />
+    <state width="1899" height="206" key="GridCell.Tab.0.left" timestamp="1593251336716">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state width="949" height="191" key="GridCell.Tab.0.left/0.24.1920.1056@0.24.1920.1056" timestamp="1592747020425" />
-    <state width="949" height="191" key="GridCell.Tab.0.right" timestamp="1592747020426">
+    <state width="1899" height="206" key="GridCell.Tab.0.left/0.24.1920.1056@0.24.1920.1056" timestamp="1593251336716" />
+    <state width="1899" height="206" key="GridCell.Tab.0.right" timestamp="1593251336716">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state width="949" height="191" key="GridCell.Tab.0.right/0.24.1920.1056@0.24.1920.1056" timestamp="1592747020426" />
-    <state width="1899" height="353" key="GridCell.Tab.1.bottom" timestamp="1592733065381">
+    <state width="1899" height="206" key="GridCell.Tab.0.right/0.24.1920.1056@0.24.1920.1056" timestamp="1593251336716" />
+    <state width="1899" height="380" key="GridCell.Tab.1.bottom" timestamp="1593245444583">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state width="1899" height="353" key="GridCell.Tab.1.bottom/0.24.1920.1056@0.24.1920.1056" timestamp="1592733065381" />
-    <state width="1899" height="353" key="GridCell.Tab.1.center" timestamp="1592733065380">
+    <state width="1899" height="380" key="GridCell.Tab.1.bottom/0.24.1920.1056@0.24.1920.1056" timestamp="1593245444583" />
+    <state width="1899" height="380" key="GridCell.Tab.1.center" timestamp="1593245444582">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state width="1899" height="353" key="GridCell.Tab.1.center/0.24.1920.1056@0.24.1920.1056" timestamp="1592733065380" />
-    <state width="1899" height="353" key="GridCell.Tab.1.left" timestamp="1592733065380">
+    <state width="1899" height="380" key="GridCell.Tab.1.center/0.24.1920.1056@0.24.1920.1056" timestamp="1593245444582" />
+    <state width="1899" height="380" key="GridCell.Tab.1.left" timestamp="1593245444582">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state width="1899" height="353" key="GridCell.Tab.1.left/0.24.1920.1056@0.24.1920.1056" timestamp="1592733065380" />
-    <state width="1899" height="353" key="GridCell.Tab.1.right" timestamp="1592733065381">
+    <state width="1899" height="380" key="GridCell.Tab.1.left/0.24.1920.1056@0.24.1920.1056" timestamp="1593245444582" />
+    <state width="1899" height="380" key="GridCell.Tab.1.right" timestamp="1593245444583">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state width="1899" height="353" key="GridCell.Tab.1.right/0.24.1920.1056@0.24.1920.1056" timestamp="1592733065381" />
-    <state x="442" y="140" width="1106" height="735" key="SettingsEditor" timestamp="1592669220001">
+    <state width="1899" height="380" key="GridCell.Tab.1.right/0.24.1920.1056@0.24.1920.1056" timestamp="1593245444583" />
+    <state x="442" y="140" width="1106" height="735" key="SettingsEditor" timestamp="1593248062074">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state x="442" y="140" width="1106" height="735" key="SettingsEditor/0.24.1920.1056@0.24.1920.1056" timestamp="1592669220001" />
+    <state x="442" y="140" width="1106" height="735" key="SettingsEditor/0.24.1920.1056@0.24.1920.1056" timestamp="1593248062074" />
     <state x="725" y="388" key="SimpleOpenTaskDialog" timestamp="1592661952950">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
@@ -458,10 +468,10 @@
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
     <state x="758" y="244" width="401" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.24.1920.1056@0.24.1920.1056" timestamp="1592069438485" />
-    <state x="766" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592256111318">
+    <state x="766" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592856311014">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state x="766" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.24.1920.1056@0.24.1920.1056" timestamp="1592256111318" />
+    <state x="766" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.24.1920.1056@0.24.1920.1056" timestamp="1592856311014" />
     <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1592518562014">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
