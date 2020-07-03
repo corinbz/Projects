@@ -12,8 +12,7 @@ def name(card_idx):
              "jack", "queen", "king"]
     isuit = card_idx // 13 if card_idx // 13 < 4 else card_idx // 13 % 4
     icard = card_idx % 13
-    txt = cards[icard] + " of " + suits[isuit]
-    return txt
+    return cards[icard] + " of " + suits[isuit]
 
 
 def value(card_idx):
@@ -22,8 +21,8 @@ def value(card_idx):
 
 
 def total(hand):
-    tot = sum([value(c) for c in hand])
-    if tot + 10 <= 21:
+    tot = sum(value(c) for c in hand)
+    if tot <= 11:
         tot += 10
     # Iterate over the cards in hand, and calculate the total value.
     return tot  # Additional question: What happens if you use the variable name ↪"value" instead of "tot" here?
@@ -148,8 +147,7 @@ result = []  # Stores strings about result between player and bank
 
 # ########## Draws a card for the bank and stores it to be printed later #######
 card = draw_card(deck)
-bank_cards = []
-bank_cards.append(0)
+bank_cards = [0]
 score = total(bank_cards)  # The bank's total score
 first_bank_c = (f"Bank has a {name(card)} ({value(card)}).")
 
@@ -161,9 +159,9 @@ while True:
     else:
         print("Please enter a number between 1 and 7!\n")
 
-name_players = []
-for n in range(int(nr_players)):
-    name_players.append(input(f"Player {n + 1} name: "))
+name_players = [
+    input(f"Player {n + 1} name: ") for n in range(int(nr_players))
+]
 
 player_chips = np.full(int(nr_players), 100)
 

@@ -14,10 +14,7 @@ class Deck:
         random.shuffle(self.deck)
 
     def draw(self, cards=1):
-        cards_drawed = []
-        for _ in range(cards):
-            cards_drawed.append(self.deck.pop())
-        return cards_drawed
+        return [self.deck.pop() for _ in range(cards)]
 
 
 class Card(Deck):
@@ -36,11 +33,14 @@ class Hand:
 
     def __init__(self, hand):
         self.hand = hand
-        self.hand_value = sum([Card(c).card_value for c in hand])
+        self.hand_value = sum(Card(c).card_value for c in hand)
 
         # Check if A is in the hand, and add it to total hand alternative
-        if 1 in [Card(c).card_value for c in hand] and sum([Card(c).card_value for c in hand]) + 10 < 22:
-            self.hand_value_alt = sum([Card(c).card_value for c in hand]) + 10
+        if (
+            1 in [Card(c).card_value for c in hand]
+            and sum([Card(c).card_value for c in hand]) < 12
+        ):
+            self.hand_value_alt = sum(Card(c).card_value for c in hand) + 10
         else:
             self.hand_value_alt = 0
 
@@ -61,10 +61,7 @@ class Hand:
             print(f"Your hand value is now {self.hand_value}: \n{self.display()}")
 
     def has_ace(self):
-        if 1 in [int(Card(c).card_value) for c in self.hand]:
-            return True
-        else:
-            return False
+        return 1 in [int(Card(c).card_value) for c in self.hand]
 
     def __add__(self, other):
         self.hand.append(other)
@@ -100,7 +97,7 @@ class Game:
             if draw_another.lower() in ["y", "n", "yes", "no"] and len(draw_another) < 4:
                 break
             print("Please enter yes/y or no/n !")
-        if draw_another.lower() == "y" or draw_another.lower() == "yes":
+        if draw_another.lower() in ["y", "yes"]:
             return 1
         else:
             return 0
