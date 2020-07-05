@@ -54,7 +54,8 @@ def main():
                 run = False
             if event.type == pygame.MOUSEBUTTONDOWN:
                 if HIT_IMG.get_rect().collidepoint(mouse):
-                    print ("mouse is over 'newGameButton'")
+                    print("mouse is over 'newGameButton'")
 
 
-main()
+print(HIT_IMG.get_rect(), PLAY_IMG.get_rect())
+# main()

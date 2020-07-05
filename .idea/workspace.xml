@@ -10,86 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="38b8832f-d9ee-4942-8f33-b27e06c64987" name="Default Changelist" comment="Wrote some documentation">
-      <change afterPath="$PROJECT_DIR$/assigment2/natural_numbers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/blackjack_oop.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/10_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/10_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/10_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/10_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/2_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/2_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/2_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/2_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/3_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/3_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/3_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/3_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/4_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/4_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/4_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/4_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/5_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/5_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/5_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/5_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/6_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/6_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/6_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/6_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/7_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/7_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/7_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/7_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/8_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/8_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/8_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/8_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/9_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/9_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/9_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/9_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/ace_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/ace_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/ace_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/ace_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/ace_of_spades2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/jack_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/jack_of_clubs2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/jack_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/jack_of_diamonds2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/jack_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/jack_of_hearts2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/jack_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/jack_of_spades2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/king_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/king_of_clubs2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/king_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/king_of_diamonds2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/king_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/king_of_hearts2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/king_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/king_of_spades2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/queen_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/queen_of_clubs2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/queen_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/queen_of_diamonds2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/queen_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/queen_of_hearts2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/queen_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/PNG-cards-1.3/queen_of_spades2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/buttons/button_hit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/buttons/button_play.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/buttons/button_stand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/images/chips/red_chip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blackjack_gui/pygame_window.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small_scripts/duration_format.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small_scripts/max_contigous_subarray.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small_scripts/sum_of_pairs.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/small_scripts/weight_for_weight.py" afterDir="false" />
+    <list default="true" id="38b8832f-d9ee-4942-8f33-b27e06c64987" name="Default Changelist" comment="Redid pygame window">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ball_simulation/ball_sim.py" beforeDir="false" afterPath="$PROJECT_DIR$/ball_simulation/ball_sim.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/small_scripts/reduce_directions.py" beforeDir="false" afterPath="$PROJECT_DIR$/small_scripts/reduce_directions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blackjack_gui/pygame_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/blackjack_gui/pygame_window.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -449,7 +372,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593253839525</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Redid pygame window">
+      <created>1593942698614</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1593942698614</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -493,7 +423,8 @@
     <MESSAGE value="working version with chips / more refractoring" />
     <MESSAGE value="more refractoring" />
     <MESSAGE value="Wrote some documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrote some documentation" />
+    <MESSAGE value="Redid pygame window" />
+    <option name="LAST_COMMIT_MESSAGE" value="Redid pygame window" />
   </component>
   <component name="WindowStateProjectService">
     <state x="657" y="309" key="#Servers" timestamp="1592661972817">
@@ -532,22 +463,22 @@
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
     <state x="743" y="310" key="FileChooserDialogImpl/0.24.1920.1056@0.24.1920.1056" timestamp="1593866121189" />
-    <state width="1899" height="240" key="GridCell.Tab.0.bottom" timestamp="1593942625459">
+    <state width="1899" height="240" key="GridCell.Tab.0.bottom" timestamp="1593943041209">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state width="1899" height="240" key="GridCell.Tab.0.bottom/0.24.1920.1056@0.24.1920.1056" timestamp="1593942625459" />
-    <state width="1899" height="240" key="GridCell.Tab.0.center" timestamp="1593942625459">
+    <state width="1899" height="240" key="GridCell.Tab.0.bottom/0.24.1920.1056@0.24.1920.1056" timestamp="1593943041209" />
+    <state width="1899" height="240" key="GridCell.Tab.0.center" timestamp="1593943041209">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state width="1899" height="240" key="GridCell.Tab.0.center/0.24.1920.1056@0.24.1920.1056" timestamp="1593942625459" />
-    <state width="1899" height="240" key="GridCell.Tab.0.left" timestamp="1593942625459">
+    <state width="1899" height="240" key="GridCell.Tab.0.center/0.24.1920.1056@0.24.1920.1056" timestamp="1593943041209" />
+    <state width="1899" height="240" key="GridCell.Tab.0.left" timestamp="1593943041208">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state width="1899" height="240" key="GridCell.Tab.0.left/0.24.1920.1056@0.24.1920.1056" timestamp="1593942625459" />
-    <state width="1899" height="240" key="GridCell.Tab.0.right" timestamp="1593942625459">
+    <state width="1899" height="240" key="GridCell.Tab.0.left/0.24.1920.1056@0.24.1920.1056" timestamp="1593943041208" />
+    <state width="1899" height="240" key="GridCell.Tab.0.right" timestamp="1593943041209">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state width="1899" height="240" key="GridCell.Tab.0.right/0.24.1920.1056@0.24.1920.1056" timestamp="1593942625459" />
+    <state width="1899" height="240" key="GridCell.Tab.0.right/0.24.1920.1056@0.24.1920.1056" timestamp="1593943041209" />
     <state width="1899" height="255" key="GridCell.Tab.1.bottom" timestamp="1593938345867">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
@@ -576,10 +507,10 @@
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
     <state x="758" y="244" width="401" height="615" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.24.1920.1056@0.24.1920.1056" timestamp="1592069438485" />
-    <state x="766" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1592856311014">
+    <state x="766" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1593943341205">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
-    <state x="766" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.24.1920.1056@0.24.1920.1056" timestamp="1592856311014" />
+    <state x="766" y="468" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.24.1920.1056@0.24.1920.1056" timestamp="1593943341205" />
     <state x="623" y="255" width="672" height="678" key="search.everywhere.popup" timestamp="1592518562014">
       <screen x="0" y="24" width="1920" height="1056" />
     </state>
