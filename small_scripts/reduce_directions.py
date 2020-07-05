@@ -11,8 +11,8 @@ def dirReduc(arr):
     running = True
     while running:
         running = False
-        for i in range(len(arr) -1):
-            if arr[i:i+2] in not_valid:
+        for i in range(len(result) - 1):
+            if result[i : i + 2] in not_valid:
                 del result[i:i+2]
                 running = True
 

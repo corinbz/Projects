@@ -22,11 +22,10 @@ while running:
             running = False
 
     Keys = pg.key.get_pressed()
-    if Keys[pg.K_RETURN]:
-        if y <= 400:
-            a = F * dt
-            vy += a * dt
-            y += vy * dt
+    if Keys[pg.K_RETURN] and y <= 400:
+        a = F * dt
+        vy += a * dt
+        y += vy * dt
     screen.fill((173, 216, 230))
     pg.draw.rect(screen, GREEN, (0, 400, 500, 100))
     pg.draw.circle(screen, RED, (int(x), int(y)), 10)
@@ -36,6 +35,3 @@ while running:
     pg.display.flip()
 
 pg.quit()
-# screen.fill()         # To have a blue sky
-# pg.draw.rect()        # Draw green colour to represent grass in bottom 100 pixels
-# pg.draw.circle()      # Draw ball
